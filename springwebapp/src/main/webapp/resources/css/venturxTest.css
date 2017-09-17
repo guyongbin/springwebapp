@@ -109,6 +109,7 @@
     border-left: 0;
     -webkit-transform-origin: center left;
     transform-origin: center left;
+    transform: rotate(180deg);
 }
 .progress .progress-right{
     right: 0;
@@ -120,7 +121,6 @@
     border-right: 0;
     -webkit-transform-origin: center right;
     transform-origin: center right;
-    transform: rotate(97deg);
 } 
 .progress .progress-right .progress-bar-back{
     left: -100%;
@@ -146,31 +146,53 @@
     top: 35%;
     left: 5%;
 }
-.progress.blue .progress-bar{
-    border-color: #049dff;
+.progress.first .progress-bar{
+    border-color: #ef2929;
 }
-.progress.blue .progress-bar-back{
+.progress.second .progress-bar{
+    border-color: #cc0000;
+}
+
+.progress.third .progress-bar{
+    border-color: #f57900;
+}
+
+.progress.fourth .progress-bar{
+    border-color: #fce94f;
+}
+
+.progress .progress-bar-back{
     border-color: #eeeeec;
 }
-.progress.blue .progress-left .progress-bar-back{
+
+.progress.first .progress-left .progress-bar{
+     transform: rotate(0deg);
+}
+
+.progress.first .progress-right .progress-bar{
+     transform: rotate(97deg);
+}
+
+.progress.second .progress-left .progress-bar{
+     transform: rotate(0deg);
+}
+
+.progress.second .progress-right .progress-bar{
+     transform: rotate(45deg);
+}
+
+.progress.third .progress-left .progress-bar{
+     transform: rotate(0deg);
+}
+
+.progress.third .progress-right .progress-bar{
+     transform: rotate(86deg);
+}
+
+.progress.fourth .progress-left .progress-bar{
      transform: rotate(180deg);
 }
 
-.progress.blue .progress-left .progress-bar{
-     transform: rotate(0deg);
-}
-.progress.yellow .progress-bar{
-    border-color: #fdba04;
-}
-/* .progress.yellow .progress-right .progress-bar{
-	left: -100%;
-    border-top-left-radius: 160px;
-    border-bottom-left-radius: 160px;
-    border-right: 0;
-    -webkit-transform-origin: center right;
-    transform-origin: center right;
-    transform: rotate(180deg);
-} */
-.progress.yellow .progress-left .progress-bar{
-     transform: rotate(90deg);
+.progress.fourth .progress-right .progress-bar{
+     transform: rotate(180deg);
 }

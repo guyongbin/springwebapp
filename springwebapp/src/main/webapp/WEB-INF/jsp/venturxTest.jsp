@@ -14,7 +14,7 @@
 <title>venturxTest</title>
 </head>
     <body>
-		<div ng-app="" ng-init="blueturn='27'">	
+		<div ng-app="" ng-init="first='27';second='3';third='24';fourth='100'">	
 			<div class="container">
 				  <label class="normalfont">How is </label>
 				  <label class="bigfont">VenturX </label>
@@ -24,28 +24,97 @@
 		  </div>
 			<div class="container">
 			    <div class="row">
-			        <div class="col-md-3 col-sm-6">
-			            <div class="progress blue">
+			       <div class="col-md-3 col-sm-6">
+			            <div class="progress first">
 			                <span class="progress-left">
 			                	   <span class="progress-bar-back"></span>
-			                    <span class="progress-bar" id="blueleftbar"></span>
-
+			                    <span class="progress-bar" id="firstleftbar"></span>
 			                </span>
 			                <span class="progress-right">
 			                	  <span class="progress-bar-back"></span>
-			                    <span class="progress-bar" id="bluerightbar"></span>
+			                    <span class="progress-bar" id="firstrightbar"></span>
 			                </span>
 			                <div class="progress-value">
-				                <font class="bigfontForPersent">{{blueturn}}</font>
+				                <font class="bigfontForPersent">{{first}}</font>
 				                <font class="normalfontForPersent">%</font>
 				                <br>
 				                <br>
 				                <font class="normalfontForPersent">Product</font>
 			                </div>
 			            </div>
-			            <input type="text" class="inputPersant" id="blueturn" ng-model="blueturn">%
-					     <button onclick="myFunction('blue')">setBlue</button>
+   			            <br>
+			            <input type="text" class="inputPersant" id="first" ng-model="first">%
+					     <button onclick="myFunction('first')">setFirst</button>
 			        </div>
+    			    <div class="col-md-3 col-sm-6">
+			            <div class="progress second">
+			                <span class="progress-left">
+			                	   <span class="progress-bar-back"></span>
+			                    <span class="progress-bar" id="secondleftbar"></span>
+
+			                </span>
+			                <span class="progress-right">
+			                	  <span class="progress-bar-back"></span>
+			                    <span class="progress-bar" id="secondrightbar"></span>
+			                </span>
+			                <div class="progress-value">
+				                <font class="bigfontForPersent">{{second}}</font>
+				                <font class="normalfontForPersent">months</font>
+				                <br>
+				                <br>
+				                <font class="normalfontForPersent">Runway</font>
+			                </div>
+			            </div>
+   			            <br>
+			            <input type="text" class="inputPersant" id="second" ng-model="second">months
+					     <button onclick="myFunction('second')">setSecond</button>
+			        </div>
+    			    <div class="col-md-3 col-sm-6">
+			            <div class="progress third">
+			                <span class="progress-left">
+			                	   <span class="progress-bar-back"></span>
+			                    <span class="progress-bar" id="thirdleftbar"></span>
+
+			                </span>
+			                <span class="progress-right">
+			                	  <span class="progress-bar-back"></span>
+			                    <span class="progress-bar" id="thirdrightbar"></span>
+			                </span>
+			                <div class="progress-value">
+				                <font class="bigfontForPersent">{{third}}</font>
+				                <font class="normalfontForPersent">%</font>
+				                <br>
+				                <br>
+				                <font class="normalfontForPersent">Conversion</font>
+			                </div>
+			            </div>
+   			            <br>
+			            <input type="text" class="inputPersant" id="third" ng-model="third">Conversion
+					     <button onclick="myFunction('third')">setthird</button>
+			        </div>	
+    			    <div class="col-md-3 col-sm-6">
+			            <div class="progress fourth">
+			                <span class="progress-left">
+			                	   <span class="progress-bar-back"></span>
+			                    <span class="progress-bar" id="fourthleftbar"></span>
+
+			                </span>
+			                <span class="progress-right">
+			                	  <span class="progress-bar-back"></span>
+			                    <span class="progress-bar" id="fourthrightbar"></span>
+			                </span>
+			                <div class="progress-value">
+				                <font class="bigfontForPersent">{{fourth}}</font>
+				                <font class="normalfontForPersent">%</font>
+				                <br>
+				                <br>
+				                <font class="normalfontForPersent">Engagement</font>
+			                </div>
+			            </div>
+   			            <br>
+			            <input type="text" class="inputPersant" id="fourth" ng-model="fourth">Engagement
+					     <button onclick="myFunction('fourth')">setfourth</button>
+			        </div>			        
 			    </div>
 			</div>
 		</div>
