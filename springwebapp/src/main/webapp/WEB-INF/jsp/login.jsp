@@ -19,7 +19,7 @@
 	 	<form:form id="loginForm" method="post" action="login" modelAttribute="loginBean">
 			<form:label path="username">Enter your user-name</form:label>
 			<form:input id="username" name="username" path="" value="${loginBean.username}" /><br>
-			<form:label path="password">Please enter your password test for github</form:label>
+			<form:label path="password">Please enter your password test fo</form:label>
 			<form:password id="password" name="password" path="" /><br>
 			<input type="submit" value="Submit" />
 		</form:form>
